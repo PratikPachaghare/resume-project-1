@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        :root{
+            --profile-colore :rgb(87, 111, 247);
+            --skill-background-colore: rgb(58, 58, 58);
+            --word-colore-box :rgb(41, 41, 41);
+            --para-colore :rgb(110, 110, 110);
+        }
+        .container{
+            background-color:  aliceblue;
+            padding: 10px;
+            font-family:  Arial, Helvetica, sans-serif;
+            margin:50px auto;
+            width:1000px;
+            height: 1200px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .left{
+            /* padding: 5px; */
+            width: 35%;
+            border: 1px solid black;
+            background-color: var(--skill-background-colore);
+            
+        }
+
+        .left .profile{
+            margin-bottom: 0%;
+            padding-bottom:0% ;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 27%;
+            background-color: var(--profile-colore);
+            justify-content: center;
+            align-items: center;
+        }
+        .left .skill{
+            color: aliceblue;
+            padding-top: 0%;
+            margin-top: 10%;
+            width: 100%;
+            height:73%;
+            /* background-color: rgb(57, 56, 56); */
+        }
+    
+        .left .profile img{
+            
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .left .profile a{
+            margin: 3px;
+            font-size: 22px;
+            text-decoration: none;
+            color: rgb(244, 242, 231);
+            font-weight: 70;
+        }
+
+        .skill h3{
+           
+            margin: 4%;
+            margin-top: 10%;
+            margin-left: 25px;
+            font-size: 32px;
+        }
+        .skill hr{
+            margin:1px auto;
+            width: 250px; 
+            border-radius: 10px;
+        }
+        .skill .details{
+            margin-left: 45px;
+            font-size: 20px;
+        }
+        .skill .details p{
+            margin: 3%;
+        }
+
+        .right{
+            font-size: medium;
+            padding: 5px;
+            width: 68%;
+            /* border: 1px solid black; */
+        }
+
+        .right .block h3{
+            color: var(--profile-colore);
+           
+            margin: 2px;
+            margin-top: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        .right .block hr{
+            margin: auto;
+            width: 550px;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+        .right .block p{
+            color: var(--para-color);
+            margin-left: 30px;
+            font-size: 15px;
+        }  
+        
+        .right .box h6{
+            color: var(--word-colore-box);
+            margin: 2px;
+            
+            font-size: 20px;
+            font-weight: bold;
+            margin-left: 15%;
+        }
+        .right .box p{
+            width: 400px;
+             margin-left: 15%; 
+             font-size: 17px;
+             color: var(--para-color);
+            /* margin-top: 15px;
+            margin: 2px; 
+            font-size: 15px;  */
+        }
+        .right .box:first-child{
+            margin-right: 20px;
+           
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="profile">
+                <img src="./asseat/channel-profile.jpg" alt="">
+                <p class="name">Name</p>
+                <p class="account">
+                    <a href=""><i class="fa-brands fa-linkedin"></i> linkdin</a>
+                    <a href=""><i class="fa-brands fa-github"></i> github</a>
+                </p>
+            </div>
+            <div class="skill">
+                <div class="block1">
+                    <h3>contact</h3><hr>
+                    <div class="details">
+                        <p><b>Phone</b></p>
+                        <p>1234567890</p>
+                        <p><b>Email</b></p>
+                        <p>Pratikpacghare@gmail.com</p>
+                    </div>
+                </div>
+                <div class="block2">
+                    <h3>skill</h3><hr>
+                    <div class="details">
+                        <p>skill-1</p>
+                        <div class="progress" style="width: 80%; height: 9px;" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%">25%</div>
+                          </div>
+                        <p>skill-1</p>
+                        <div class="progress" style="width: 80%; height: 9px;" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar" style="width: 85%">85%</div>
+                        </div>
+                        <p>skill-1</p>
+                        <div class="progress" style="width: 80%; height: 9px;" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar" style="width: 35%">35%</div>
+                        </div>
+                        <p>skill-1</p>
+                        <div class="progress" style="width: 80%; height: 9px;" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                           <div class="progress-bar" style="width: 60%">60%</div>
+                        </div>  
+                    </div>
+                </div>
+                <div class="block3">
+                    <h3>cirtificats</h3><hr>
+                    <div class="details">
+                        <p>cirtificats-1</p>
+                        <p>cirtificats-1</p>
+                        <p>cirtificats-1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="block block1">
+                <h3>OBJECTIV</h3><hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia inventore dignissimos alias optio aperiam, accusantium hic non odio distinctio minus est nam quidem error tempara, mollitia quo, reiciendis labore itaque?</p>
+            </div>
+            <div class="block block2">
+                <h3>WORK EXPERIENCE-n YEARS</h3><hr>
+                <div class="box box1">
+                    <h6><i class="fa-solid fa-play"></i> Role name 1</h6>
+                    <h6>company name</h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+                <div class="box box2">
+                    <h6><i class="fa-solid fa-play"></i> Role name 1</h6>
+                    <h6>company name</h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+                <div class="box box3">
+                    <h6><i class="fa-solid fa-play"></i> Role name 1</h6>
+                    <h6>company name</h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+            </div>
+            <div class="block block3">
+                <h3>PROJECTS</h3><hr>
+                <div class="box box1">
+                    <h6><i class="fa-solid fa-play"></i> project name 1</h6>
+                    <h6>tack stack </h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+                <div class="box box2">
+                    <h6><i class="fa-solid fa-play"></i> project name 1</h6>
+                    <h6>tack stack </h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+            </div>
+            <div class="block block4">
+                <h3>EDUCATION</h3> <hr>
+                <div class="box box1">
+                    <h6><i class="fa-solid fa-play"></i> FROM-TO 1</h6>
+                    <h6>Education </h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+                <div class="box box2">
+                    <h6><i class="fa-solid fa-play"></i> FROM-TO 1</h6>
+                    <h6>Education </h6>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos inventore voluptatem nobis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
